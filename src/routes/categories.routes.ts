@@ -2,4 +2,4 @@ import { Router } from 'express';
 
 const categoriesRoutes = Router();
 
-export {};
+export { categoriesRoutes };
