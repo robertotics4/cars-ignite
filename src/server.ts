@@ -7,7 +7,7 @@ import './database';
 
 import './shared/container';
 
-import router from './routes';
+import { router } from './routes';
 
 const app = express();
 

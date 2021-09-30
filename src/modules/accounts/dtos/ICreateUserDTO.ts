@@ -6,4 +6,4 @@ interface ICreateUserDTO {
   driver_license: string;
 }
 
-export default ICreateUserDTO;
+export { ICreateUserDTO };
