@@ -3,9 +3,9 @@ import swaggerUi from 'swagger-ui-express';
 
 import { AppError } from '@errors/AppError';
 
-import swaggerFile from './swagger.json';
+import swaggerFile from '../../../swagger.json';
 
-import './database';
+import '@shared/infra/typeorm';
 
 import '@shared/container';
 
