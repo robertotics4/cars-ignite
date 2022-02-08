@@ -10,6 +10,7 @@ interface ICarsRepository {
     brand,
     name,
   }: IFindAvailableDTO): Promise<Car[]>;
+  findById(id: string): Promise<Car>;
 }
 
 export { ICarsRepository };

@@ -17,19 +17,17 @@
 [x] Deve ser possível listar todos os carros disponíveis pelo nome do carro.
 
 **RN**
-[ ] O usuário não precisa estar logado no sistema.
+[x] O usuário não precisa estar logado no sistema.
 
 # Cadastro de especificação no carro
 
 **RF**
 [ ] Deve ser possível cadastrar uma especificação para um carro.
-[ ] Deve ser possível listar todas as especificações.
-[ ] Deve ser possível listar todos os carros.
-[ ] O usuário responsável pelo cadastro deve ter perfil de administrador.
 
 **RN**
 [ ] Não deve ser possível cadastrar uma especificação para um carro não cadastrado.
 [ ] Não deve ser possível cadastrar já existente para o mesmo carro.
+[ ] O usuário responsável pelo cadastro deve ter perfil de administrador.
 
 # Cadastro de imagens do carro
 
