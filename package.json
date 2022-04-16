@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --poll --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles",
     "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
     "csv-parse": "^4.16.0",
     "dayjs": "^1.11.0",
     "express": "^4.17.1",
@@ -19,6 +20,7 @@
     "multer": "^1.4.2",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
+    "supertest": "^6.2.2",
     "swagger-ui-express": "^4.1.6",
     "tsyringe": "^4.6.0",
     "typeorm": "^0.2.35",
@@ -30,6 +32,7 @@
     "@types/jest": "^27.0.3",
     "@types/jsonwebtoken": "^8.5.5",
     "@types/multer": "^1.4.6",
+    "@types/supertest": "^2.0.12",
     "@types/swagger-ui-express": "^4.1.3",
     "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.26.1",
